@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<!-- 与Spring整合之后数据源就配置在Spring配置文件中，此文件只需要配置映射文件的路径就可以了 -->
+	<mappers>
+      <!-- 注册userMapper.xml文件， 
+         userMapping.xml位于com.fjh.mapping这个包下，所以resource写成com/fjh/mapping/UserMapping.xml-->
+        <mapper resource="com/fjh/dao/UserMapper.xml"/>
+    </mappers>
+
+</configuration>
